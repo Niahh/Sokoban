@@ -26,15 +26,40 @@ enum cell {
     FREE = 0
 };
 
+typedef struct sokomem sokomem;
+
+// a tree to store explored nodes.
+struct sokomem{
+    // checks if the node exist
+    int exp;
+    // the list of child nodes.
+    sokomem** son;
+};
+
+
+sokomem* sokomem_empty();
+
+void sokomem_print(sokomem* mem, int dim, int prof);
+
+void sokomem_fill(sokomem* mem, int dim);
 typedef struct sokoban {
     int *state;
+    list* boxes;
     pos player;
     pos dim;
+    int prev_id;
 } sokoban;
 
-sokoban *sokoban_create(int *state, int x, int y);
 
-void sokoban_add_moves(sokoban *sokobans, list* explored);
+int sokoban_explored(sokoban *s, sokomem* mem);
+
+sokoban *sokoban_create(int *state, int x, int y, int id);
+
+void sokoban_explore_move(sokoban* s, list* explored, int x, int y, sokomem* mem, int id);
+
+void sokoban_apply(sokoban* sokoban);
+
+void sokoban_add_moves(sokoban *sokobans, list* explored, sokomem* mem, int id);
 
 int sokoban_compare(sokoban *s1, sokoban *s2);
 

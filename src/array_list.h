@@ -21,7 +21,7 @@ void list_add(list *l, void *elem);
 
 void *list_at(list *l, unsigned int index);
 
-int list_contains(list *l, void* elem, int(*compare(void*, void*)));
+int list_contains(list *l, void* elem, int(compare(void*, void*)));
 
 void *list_last(list *l);
 

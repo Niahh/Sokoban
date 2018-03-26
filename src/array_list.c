@@ -18,14 +18,8 @@ void list_add(list *l, void *elem) {
     l->size += 1;
 }
 
-
 void list_reserve(list *l, unsigned int size) {
-    void **new_res = malloc((size + l->max_size) * sizeof(void *));
-    for (unsigned int i = 0; i < l->size; i++) {
-        new_res[i] = l->list[i];
-    }
-    free(l->list);
-    l->list = new_res;
+    l->list = realloc(l->list, (size + l->max_size) * sizeof(void *));
     l->max_size += size;
 }
 
@@ -55,7 +49,7 @@ void list_free(list *l, void (*destructor)(void *)) {
 }
 
 
-int list_contains(list *l, void* elem, int(*compare(void*, void*))){
+int list_contains(list *l, void* elem, int(compare(void*, void*))){
     for (int i = 0;i < l->size; i++){
         if (compare(elem, list_at(l, i))){
             return 1;
