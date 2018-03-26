@@ -83,6 +83,10 @@ sokoban *sokoban_clone(sokoban *s) {
     return new;
 }
 
+int sokoban_is_legal(sokoban* s){
+    
+}
+
 // should only modify the state.
 // Only assignment are in the AT() calls
 void sokoban_make_move(sokoban *s, int x, int y) {

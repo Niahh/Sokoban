@@ -53,6 +53,8 @@ typedef struct sokoban {
 
 int sokoban_explored(sokoban *s, sokomem* mem);
 
+int sokoban_is_legal(sokoban* s);
+
 sokoban *sokoban_create(int *state, int x, int y, int id);
 
 void sokoban_explore_move(sokoban* s, list* explored, int x, int y, sokomem* mem, int id);

@@ -1,39 +1,25 @@
 #include <stdio.h>
 #include "array_list.h"
 #include "sokoban.h"
+#include "stdlib.h"
 
-void bfs(){
-    /*int state[25] = {
-                     WALL,WALL,WALL,WALL,WALL,
-                     WALL,PLAYER,BOX,TARGET,WALL,
-                     WALL,BOX,FREE,FREE,WALL,
-                     WALL,TARGET,FREE,FREE,WALL,
-                     WALL,WALL,WALL,WALL,WALL};*/
-    /*int state[64] = {WALL,WALL,WALL,WALL,WALL,WALL,WALL,WALL,
-                     WALL,FREE,FREE,TARGET,FREE,WALL,WALL,WALL,
-                     WALL,FREE,FREE,FREE,FREE,WALL,WALL,WALL,
-                     WALL,FREE,WALL,BOX,BOX,TARGET,FREE,WALL,
-                     WALL,TARGET,FREE,FREE,WALL,WALL,FREE,WALL,
-                     WALL,PLAYER,BOX,FREE,WALL,WALL,FREE,WALL,
-                     WALL,WALL,WALL,FREE,FREE,FREE,FREE,WALL,
-                     WALL,WALL,WALL,WALL,WALL,WALL,WALL,WALL};*//*
-    int state[73] = {8,8,8,8,8,8,8,8,8,
-                     8,0,0,0,0,8,8,8,8,
-                     8,0,1,1,1,8,8,8,8,
-                     8,0,0,8,4,4,8,8,8,
-                     8,8,0,0,4,4,1,0,8,
-                     8,8,0,2,0,0,0,0,8,
-                     8,8,8,8,8,8,8,8,8};*/
-    int state[64] = {
-            8,8,8,8,8,8,8,8,
-            8,8,8,4,8,8,8,8,
-            8,8,8,0,8,8,8,8,
-            8,8,8,1,0,1,4,8,
-            8,4,0,1,2,8,8,8,
-            8,8,8,8,1,8,8,8,
-            8,8,8,8,4,8,8,8,
-            8,8,8,8,8,8,8,8};
-    sokoban *s = sokoban_create((int*)&state, 8, 8, 0);
+sokoban* read_file(char* name){
+
+    FILE *myFile;
+    myFile = fopen(name, "r");
+    int dimx, dimy;
+    fscanf(myFile, "%d,", &dimx);
+    fscanf(myFile, "%d\n", &dimy);
+    int dim = dimx*dimy;
+    int* numberArray = malloc(sizeof(int)*dim);
+    for (int i = 0; i < dim; i++){
+        fscanf(myFile, "%d,", &numberArray[i] );
+    }
+    fclose(myFile);
+    return sokoban_create(numberArray, dimx ,dimy, 0);
+}
+
+void bfs(sokoban* s){
     sokoban_print(s);
     list* explored = list_init();
     sokomem* mem = sokomem_empty();
@@ -47,6 +33,10 @@ void bfs(){
             break;
         }
         sokoban_add_moves(s, explored, mem, i);
+        /*if (i%10000) {
+            printf("i : %d\n", i);
+            printf("final : %d\n\n", explored->size);
+        }*/
     }
     sokoban* prev = s;
     int nb = 1;
@@ -85,7 +75,13 @@ void create(){/*
     sokoban_compare(copy, s);
 }
 
-int main() {
-    bfs();
+int main(int argc, char** argv) {
+    if (argc >1){
+        char* file_name = malloc(11* sizeof(char));
+        sprintf(file_name, "soko%d.txt", atoi(argv[1]));
+        bfs(read_file(file_name));
+    } else {
+        printf("please specify number\n");
+    }
 }
 
