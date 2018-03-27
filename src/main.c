@@ -3,7 +3,6 @@
 #include "sokoban.h"
 #include "stdlib.h"
 
-
 sokoban* read_file(char* name){
 
     FILE *myFile;
