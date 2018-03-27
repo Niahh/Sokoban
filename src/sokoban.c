@@ -71,19 +71,6 @@ void sokoban_add_moves(sokoban *s, list* explored, sokomem * mem, int id) {
     sokoban_unapply(s);
 }
 
-sokoban *sokoban_clone(sokoban *s) {
-    sokoban *new = malloc(sizeof(sokoban));
-    new->dim = s->dim;
-    new->player = s->player;
-    new->state = malloc(sizeof(int) * s->dim.x * s->dim.y);
-    for (int i = 0; i < s->dim.x; i++) {
-        for (int j = 0; j < s->dim.y; j++) {
-            AT(i, j, new) = AT(i, j, s);
-        }
-    }
-    return new;
-}
-
 // should only modify the state.
 // Only assignment are in the AT() calls
 void sokoban_make_move(sokoban *s, int x, int y) {
@@ -247,6 +234,13 @@ void pos_destroy(void * p){
     free(a);
 }
 
+pos* pos_clone(pos* p){
+    pos* new = malloc(sizeof(p));
+    new->x = p->x;
+    new->y = p->y;
+    return new;
+}
+
 void sokoban_parse_illegals(sokoban* s){
     pos* p = malloc(sizeof(pos));
     p->x = 0;
@@ -264,4 +258,14 @@ void sokoban_parse_illegals(sokoban* s){
             }
         }
     }
+}
+
+sokoban* sokoban_clone(sokoban* s){
+    sokoban* new = malloc(sizeof(sokoban));
+    new->state = s->state;
+    new->dim = s->dim;
+    new->boxes = list_clone(s->boxes, (void*(*)(void*))pos_clone);
+    new->prev_id = 0;
+    new->player = s->player;
+    return new;
 }

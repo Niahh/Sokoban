@@ -120,10 +120,22 @@ void list_clear_no_free(list *l);
 void *list_random(list *l);
 
 /**
+ * Reverses the list order.
+ * @param l : the list.
+ */
+void list_reverse(list* l);
+
+/**
  * Destroys the list without freeing its elements.
  * @param l : the list.
  */
 void list_destroy(list *l);
 
+/**
+ * Returns a new list filled with clones of the elements of the current list.
+ * @param l : the list.
+ * @return the cloned list.
+ */
+list* list_clone(list* l, void*(*)(void*));
 
 #endif //SOKOBAN_ARRAY_LIST_H

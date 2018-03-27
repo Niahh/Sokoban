@@ -153,8 +153,31 @@ int sokoban_is_legal(sokoban* s, pos* start);
 int pos_compare(void* p1, void* p2);
 
 /**
+ * Clone the position and returns a new one.
+ * @param p : the position to clone.
+ * @return the cloned position.
+ */
+pos* pos_clone(pos* p);
+
+/**
+ * Returns a clone of the sokoban.
+ *
+ * /!\ This will not clone the state.
+ *
+ * @param s : the given sokoban.
+ * @return The cloned  state.
+ */
+sokoban* sokoban_clone(sokoban* s);
+
+/**
  * destroys a position.
  * @param p : the position to destroy.
  */
 void pos_destroy(void * p);
+
+/**
+ * destroys a sokoban state.
+ * @param s : the state to destroy, the map wont be destroyed.
+ */
+void sokoban_destroy(void * s);
 #endif //SOKOBAN_SOKOBAN_H

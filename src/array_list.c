@@ -132,6 +132,14 @@ void *list_rm_at(list *l, unsigned int index) {
     return temp;
 }
 
+void list_reverse(list* l){
+    void* tmp;
+    for (int i = 0;i<l->size/2; i++){
+        tmp = list_at(l, i);
+        l->list[i] = l->list[l->size-i-1];
+        l->list[l->size-i-1] = tmp;
+    }
+}
 
 void *list_random(list *l) {
     return list_at(l, ((unsigned int) rand()) % l->size);
@@ -140,4 +148,12 @@ void *list_random(list *l) {
 void list_destroy(list *l) {
     free(l->list);
     free(l);
+}
+
+list* list_clone(list* l, void*(clone)(void*)){
+    list* new = list_init_cap(l->size);
+    for (int i = 0;i<l->size; i++){
+        list_add(new, clone(list_at(l, i)));
+    }
+    return new;
 }

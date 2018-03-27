@@ -4,7 +4,6 @@
 #include "stdlib.h"
 
 sokoban* read_file(char* name){
-
     FILE *myFile;
     myFile = fopen(name, "r");
     int dimx, dimy;
@@ -19,7 +18,7 @@ sokoban* read_file(char* name){
     return sokoban_create(numberArray, dimx ,dimy, 0);
 }
 
-void bfs(sokoban* s){
+list* bfs(sokoban* s){
     sokoban_parse_illegals(s);
     sokoban_print(s);
     list* explored = list_init_cap(1000000);
@@ -40,15 +39,19 @@ void bfs(sokoban* s){
         }
     }
     sokoban* prev = s;
+    list* sol = list_init();
+    list_add(sol, sokoban_clone(prev));
     int nb = 1;
     for (int i = s->prev_id;i!=0;){
         prev = list_at(explored, prev->prev_id);
+        sokoban* to_add = sokoban_clone(prev);
+        list_add(sol, to_add);
         i = prev->prev_id;
-        /*printf("\n");
-        sokoban_print(prev);*/
         nb++;
     }
-    printf("in %d", nb);
+    list_reverse(sol);
+    list_free(explored, sokoban_destroy);
+    return sol;
 }
 
 int main(int argc, char** argv) {
@@ -61,3 +64,9 @@ int main(int argc, char** argv) {
     }
 }
 
+
+void sokoban_destroy(void * s){
+    sokoban* sok = s;
+    list_free(sok->boxes, pos_destroy);
+    free(s);
+}
