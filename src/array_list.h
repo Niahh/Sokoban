@@ -17,11 +17,17 @@ void list_reserve(list *l, unsigned int size);
 
 list *list_init(void);
 
+list *list_init_cap(int cap);
+
 void list_add(list *l, void *elem);
 
 void *list_at(list *l, unsigned int index);
 
+void list_sort(list* l, int(cmp)(void*, void*));
+
 int list_contains(list *l, void* elem, int(compare(void*, void*)));
+
+void* list_get(list *l, void* elem, int(compare(void*, void*)));
 
 void *list_last(list *l);
 

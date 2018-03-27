@@ -1,0 +1,1450 @@
+desc: (none)
+cmd: ./soko 9
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=208408
+mem_heap_B=4911
+mem_heap_extra_B=49
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4911 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4EA8E0A: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4EB8BC4: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x4EB7A52: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:548)
+    n1: 4096 0x4EB8C80: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E96840: _IO_vfscanf (vfscanf.c:631)
+      n1: 4096 0x4EA6F54: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x10A05A: read_file (main.c:11)
+        n0: 4096 0x10A5D8: main (main.c:82)
+ n1: 552 0x4EA99CB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x10A03A: read_file (main.c:9)
+   n0: 552 0x10A5D8: main (main.c:82)
+ n1: 252 0x10A093: read_file (main.c:14)
+  n0: 252 0x10A5D8: main (main.c:82)
+ n0: 11 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=38336648
+mem_heap_B=7168303
+mem_heap_extra_B=2206457
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=84270335
+mem_heap_B=15379471
+mem_heap_extra_B=4764481
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=136636368
+mem_heap_B=24544647
+mem_heap_extra_B=7636569
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=183567366
+mem_heap_B=32609295
+mem_heap_extra_B=10174241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=215482152
+mem_heap_B=38055199
+mem_heap_extra_B=11894169
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=260850960
+mem_heap_B=45552471
+mem_heap_extra_B=14279481
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=314852151
+mem_heap_B=54485687
+mem_heap_extra_B=17121569
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=378329369
+mem_heap_B=64725679
+mem_heap_extra_B=20404793
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=416216370
+mem_heap_B=70839879
+mem_heap_extra_B=22361841
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=463569295
+mem_heap_B=78343831
+mem_heap_extra_B=24779297
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=491989826
+mem_heap_B=82876175
+mem_heap_extra_B=26237217
+mem_stacks_B=0
+heap_tree=detailed
+n7: 82876175 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 36609568 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 36609552 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 32998896 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 32997888 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 9973152 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 9973152 0x10A1CB: bfs (main.c:35)
+       n0: 9973152 0x10A5E0: main (main.c:82)
+     n1: 8600256 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 8600256 0x10A1CB: bfs (main.c:35)
+       n0: 8600256 0x10A5E0: main (main.c:82)
+     n1: 8221248 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 8221248 0x10A1CB: bfs (main.c:35)
+       n0: 8221248 0x10A5E0: main (main.c:82)
+     n1: 6203232 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 6203232 0x10A1CB: bfs (main.c:35)
+       n0: 6203232 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 2725632 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 2724624 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 2724624 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 885024 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 36609552 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 32998896 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 32997888 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 9973152 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 9973152 0x10A1CB: bfs (main.c:35)
+      n0: 9973152 0x10A5E0: main (main.c:82)
+    n1: 8600256 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 8600256 0x10A1CB: bfs (main.c:35)
+      n0: 8600256 0x10A5E0: main (main.c:82)
+    n1: 8221248 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 8221248 0x10A1CB: bfs (main.c:35)
+      n0: 8221248 0x10A5E0: main (main.c:82)
+    n1: 6203232 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 6203232 0x10A1CB: bfs (main.c:35)
+      n0: 6203232 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 2725632 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 2724624 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 2724624 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 885024 in 1 place, below massif's threshold (1.00%)
+ n2: 2935600 0x109146: sokoban_create (sokoban.c:12)
+  n1: 2935560 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 2935560 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 2935560 0x108AC9: list_init (array_list.c:10)
+  n2: 2935560 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 2935520 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 2935520 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 2348448 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 2348416 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 2348416 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 1174240 0x108AB0: list_init (array_list.c:8)
+  n2: 1174224 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 1174208 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 1174208 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 263207 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=544081439
+mem_heap_B=91096119
+mem_heap_extra_B=28886337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=586702045
+mem_heap_B=97972135
+mem_heap_extra_B=31088761
+mem_stacks_B=0
+heap_tree=detailed
+n7: 97972135 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 43211968 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 43211952 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 39085200 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 39084192 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 11795616 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 11795616 0x10A1CB: bfs (main.c:35)
+       n0: 11795616 0x10A5E0: main (main.c:82)
+     n1: 10167696 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 10167696 0x10A1CB: bfs (main.c:35)
+       n0: 10167696 0x10A5E0: main (main.c:82)
+     n1: 9695952 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 9695952 0x10A1CB: bfs (main.c:35)
+       n0: 9695952 0x10A5E0: main (main.c:82)
+     n1: 7424928 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 7424928 0x10A1CB: bfs (main.c:35)
+       n0: 7424928 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 3169152 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 3168144 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 3168144 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 957600 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 43211952 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 39085200 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 39084192 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 11795616 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 11795616 0x10A1CB: bfs (main.c:35)
+      n0: 11795616 0x10A5E0: main (main.c:82)
+    n1: 10167696 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 10167696 0x10A1CB: bfs (main.c:35)
+      n0: 10167696 0x10A5E0: main (main.c:82)
+    n1: 9695952 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 9695952 0x10A1CB: bfs (main.c:35)
+      n0: 9695952 0x10A5E0: main (main.c:82)
+    n1: 7424928 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 7424928 0x10A1CB: bfs (main.c:35)
+      n0: 7424928 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 3169152 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 3168144 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 3168144 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 957600 in 1 place, below massif's threshold (1.00%)
+ n2: 3511480 0x108AC9: list_init (array_list.c:10)
+  n2: 3511480 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 3511440 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 3511440 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 3511480 0x109146: sokoban_create (sokoban.c:12)
+  n1: 3511440 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 3511440 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 2809160 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 2809128 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 2809128 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 1404608 0x108AB0: list_init (array_list.c:8)
+  n2: 1404592 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 1404576 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 1404576 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 311487 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=620663301
+mem_heap_B=103283375
+mem_heap_extra_B=32805121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=665707523
+mem_heap_B=110218335
+mem_heap_extra_B=35060673
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=695738581
+mem_heap_B=115040671
+mem_heap_extra_B=36609713
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=740786213
+mem_heap_B=121780847
+mem_heap_extra_B=38814625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=800847360
+mem_heap_B=131370455
+mem_heap_extra_B=41894105
+mem_stacks_B=0
+heap_tree=detailed
+n7: 131370455 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 57754368 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 52625664 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 52624656 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 15928416 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 15928416 0x10A1CB: bfs (main.c:35)
+      n0: 15928416 0x10A5E0: main (main.c:82)
+    n1: 13657392 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 13657392 0x10A1CB: bfs (main.c:35)
+      n0: 13657392 0x10A5E0: main (main.c:82)
+    n1: 13015296 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 13015296 0x10A1CB: bfs (main.c:35)
+      n0: 13015296 0x10A5E0: main (main.c:82)
+    n1: 10023552 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 10023552 0x10A1CB: bfs (main.c:35)
+      n0: 10023552 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 4021920 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 4020912 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 4020912 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1106784 in 1 place, below massif's threshold (1.00%)
+ n2: 57753904 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 57753888 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 52625184 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 52624176 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 15928416 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 15928416 0x10A1CB: bfs (main.c:35)
+       n0: 15928416 0x10A5E0: main (main.c:82)
+     n1: 13657392 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 13657392 0x10A1CB: bfs (main.c:35)
+       n0: 13657392 0x10A5E0: main (main.c:82)
+     n1: 13015296 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 13015296 0x10A1CB: bfs (main.c:35)
+       n0: 13015296 0x10A5E0: main (main.c:82)
+     n1: 10023072 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 10023072 0x10A1CB: bfs (main.c:35)
+       n0: 10023072 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 4021920 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 4020912 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 4020912 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1106784 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n2: 4826000 0x108AC9: list_init (array_list.c:10)
+  n2: 4826000 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 4825960 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 4825960 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 4826000 0x109146: sokoban_create (sokoban.c:12)
+  n1: 4825960 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 4825960 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 3860800 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 3860768 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 3860768 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 1930416 0x108AB0: list_init (array_list.c:8)
+  n2: 1930400 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 1930384 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 1930384 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 418967 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=853400793
+mem_heap_B=139222687
+mem_heap_extra_B=44468881
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=920976341
+mem_heap_B=149926591
+mem_heap_extra_B=47919233
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=981035176
+mem_heap_B=158976719
+mem_heap_extra_B=50876801
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1049280132
+mem_heap_B=169495319
+mem_heap_extra_B=54291233
+mem_stacks_B=0
+heap_tree=detailed
+n7: 169495319 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 74297680 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 74297664 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 68162976 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 68161968 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 20815200 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 20815200 0x10A1CB: bfs (main.c:35)
+       n0: 20815200 0x10A5E0: main (main.c:82)
+     n1: 17515008 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 17515008 0x10A1CB: bfs (main.c:35)
+       n0: 17515008 0x10A5E0: main (main.c:82)
+     n1: 16811424 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 16811424 0x10A1CB: bfs (main.c:35)
+       n0: 16811424 0x10A5E0: main (main.c:82)
+     n1: 13020336 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 13020336 0x10A1CB: bfs (main.c:35)
+       n0: 13020336 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 4904928 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 4903920 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 4903920 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1229760 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 74297664 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 68162976 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 68161968 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 20815200 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 20815200 0x10A1CB: bfs (main.c:35)
+      n0: 20815200 0x10A5E0: main (main.c:82)
+    n1: 17515008 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 17515008 0x10A1CB: bfs (main.c:35)
+      n0: 17515008 0x10A5E0: main (main.c:82)
+    n1: 16811424 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 16811424 0x10A1CB: bfs (main.c:35)
+      n0: 16811424 0x10A5E0: main (main.c:82)
+    n1: 13020336 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 13020336 0x10A1CB: bfs (main.c:35)
+      n0: 13020336 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 4904928 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 4903920 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 4903920 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1229760 in 1 place, below massif's threshold (1.00%)
+ n2: 6361800 0x109146: sokoban_create (sokoban.c:12)
+  n1: 6361760 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 6361760 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 6361760 0x108AC9: list_init (array_list.c:10)
+  n2: 6361760 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 6361720 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 6361720 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 5089408 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 5089376 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 5089376 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 2544720 0x108AB0: list_init (array_list.c:8)
+  n2: 2544704 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 2544688 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 2544688 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 542287 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=1094776526
+mem_heap_B=176216487
+mem_heap_extra_B=56499985
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1128897124
+mem_heap_B=181471839
+mem_heap_extra_B=58208937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1197139625
+mem_heap_B=191710023
+mem_heap_extra_B=61560025
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1242634102
+mem_heap_B=198693303
+mem_heap_extra_B=63830929
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1288127491
+mem_heap_B=205575239
+mem_heap_extra_B=66074929
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1345003126
+mem_heap_B=213791631
+mem_heap_extra_B=68794321
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1390503790
+mem_heap_B=220594383
+mem_heap_extra_B=71024465
+mem_stacks_B=0
+heap_tree=detailed
+n7: 220594383 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 96365824 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 96365808 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 89006400 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 89005392 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 27772416 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 27772416 0x10A1CB: bfs (main.c:35)
+       n0: 27772416 0x10A5E0: main (main.c:82)
+     n1: 22522752 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 22522752 0x10A1CB: bfs (main.c:35)
+       n0: 22522752 0x10A5E0: main (main.c:82)
+     n1: 21729456 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 21729456 0x10A1CB: bfs (main.c:35)
+       n0: 21729456 0x10A5E0: main (main.c:82)
+     n1: 16980768 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 16980768 0x10A1CB: bfs (main.c:35)
+       n0: 16980768 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 5995584 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 5994576 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 5994576 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1363824 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 96365808 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 89006400 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 89005392 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 27772416 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 27772416 0x10A1CB: bfs (main.c:35)
+      n0: 27772416 0x10A5E0: main (main.c:82)
+    n1: 22522752 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 22522752 0x10A1CB: bfs (main.c:35)
+      n0: 22522752 0x10A5E0: main (main.c:82)
+    n1: 21729456 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 21729456 0x10A1CB: bfs (main.c:35)
+      n0: 21729456 0x10A5E0: main (main.c:82)
+    n1: 16980768 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 16980768 0x10A1CB: bfs (main.c:35)
+      n0: 16980768 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 5995584 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 5994576 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 5994576 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1363824 in 1 place, below massif's threshold (1.00%)
+ n2: 8485960 0x108AC9: list_init (array_list.c:10)
+  n2: 8485960 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 8485920 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 8485920 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 8485960 0x109146: sokoban_create (sokoban.c:12)
+  n1: 8485920 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 8485920 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 6788744 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 6788712 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 6788712 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 3394400 0x108AB0: list_init (array_list.c:8)
+  n2: 3394384 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 3394368 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 3394368 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 707687 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=1435999462
+mem_heap_B=227333471
+mem_heap_extra_B=73239825
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1470122619
+mem_heap_B=232602207
+mem_heap_extra_B=74950713
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1526992953
+mem_heap_B=241097071
+mem_heap_extra_B=77734073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1583536253
+mem_heap_B=249356367
+mem_heap_extra_B=80459297
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1617331935
+mem_heap_B=254307247
+mem_heap_extra_B=82090905
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1668024630
+mem_heap_B=262009615
+mem_heap_extra_B=84604137
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1701819951
+mem_heap_B=266709695
+mem_heap_extra_B=86179225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1769411051
+mem_heap_B=276806719
+mem_heap_extra_B=89489593
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1837004700
+mem_heap_B=286441215
+mem_heap_extra_B=92687017
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1904595202
+mem_heap_B=296235335
+mem_heap_extra_B=95924977
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1955289246
+mem_heap_B=303418295
+mem_heap_extra_B=98317193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1989085375
+mem_heap_B=308426143
+mem_heap_extra_B=99963193
+mem_stacks_B=0
+heap_tree=detailed
+n7: 308426143 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 134138608 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 134138592 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 124880112 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 124879104 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 39566016 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 39566016 0x10A1CB: bfs (main.c:35)
+       n0: 39566016 0x10A5E0: main (main.c:82)
+     n1: 30921408 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 30921408 0x10A1CB: bfs (main.c:35)
+       n0: 30921408 0x10A5E0: main (main.c:82)
+     n1: 30251088 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 30251088 0x10A1CB: bfs (main.c:35)
+       n0: 30251088 0x10A5E0: main (main.c:82)
+     n1: 24140592 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 24140592 0x10A1CB: bfs (main.c:35)
+       n0: 24140592 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 7686000 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 7684992 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 7684992 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1572480 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 134138592 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 124880112 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 124879104 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 39566016 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 39566016 0x10A1CB: bfs (main.c:35)
+      n0: 39566016 0x10A5E0: main (main.c:82)
+    n1: 30921408 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 30921408 0x10A1CB: bfs (main.c:35)
+      n0: 30921408 0x10A5E0: main (main.c:82)
+    n1: 30251088 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 30251088 0x10A1CB: bfs (main.c:35)
+      n0: 30251088 0x10A5E0: main (main.c:82)
+    n1: 24140592 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 24140592 0x10A1CB: bfs (main.c:35)
+      n0: 24140592 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 7686000 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 7684992 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 7684992 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1572480 in 1 place, below massif's threshold (1.00%)
+ n2: 12236440 0x109146: sokoban_create (sokoban.c:12)
+  n1: 12236400 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 12236400 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 12236400 0x108AC9: list_init (array_list.c:10)
+  n2: 12236400 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 12236360 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 12236360 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 9789120 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 9789088 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 9789088 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 4894576 0x108AB0: list_init (array_list.c:8)
+  n2: 4894560 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 4894544 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 4894544 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 992407 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=2039780385
+mem_heap_B=315719495
+mem_heap_extra_B=102379241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2090476775
+mem_heap_B=322853471
+mem_heap_extra_B=104754209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2158074242
+mem_heap_B=332593951
+mem_heap_extra_B=107979145
+mem_stacks_B=0
+heap_tree=detailed
+n7: 332593951 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 144484720 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 144484704 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 134723232 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 134722224 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 42878304 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 42878304 0x10A1CB: bfs (main.c:35)
+       n0: 42878304 0x10A5E0: main (main.c:82)
+     n1: 33189408 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 33189408 0x10A1CB: bfs (main.c:35)
+       n0: 33189408 0x10A5E0: main (main.c:82)
+     n1: 32707584 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 32707584 0x10A1CB: bfs (main.c:35)
+       n0: 32707584 0x10A5E0: main (main.c:82)
+     n1: 25946928 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 25946928 0x10A1CB: bfs (main.c:35)
+       n0: 25946928 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 8138592 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 8137584 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 8137584 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1622880 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 144484704 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 134723232 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 134722224 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 42878304 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 42878304 0x10A1CB: bfs (main.c:35)
+      n0: 42878304 0x10A5E0: main (main.c:82)
+    n1: 33189408 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 33189408 0x10A1CB: bfs (main.c:35)
+      n0: 33189408 0x10A5E0: main (main.c:82)
+    n1: 32707584 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 32707584 0x10A1CB: bfs (main.c:35)
+      n0: 32707584 0x10A5E0: main (main.c:82)
+    n1: 25946928 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 25946928 0x10A1CB: bfs (main.c:35)
+      n0: 25946928 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 8138592 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 8137584 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 8137584 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1622880 in 1 place, below massif's threshold (1.00%)
+ n2: 13298120 0x108AC9: list_init (array_list.c:10)
+  n2: 13298120 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 13298080 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 13298080 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 13298120 0x109146: sokoban_create (sokoban.c:12)
+  n1: 13298080 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 13298080 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 10638496 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 10638464 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 10638464 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 5319264 0x108AB0: list_init (array_list.c:8)
+  n2: 5319248 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 5319232 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 5319232 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 1070527 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=2225664991
+mem_heap_B=342372759
+mem_heap_extra_B=111215609
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2276358452
+mem_heap_B=349579199
+mem_heap_extra_B=113609785
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2327051817
+mem_heap_B=356587023
+mem_heap_extra_B=115955729
+mem_stacks_B=0
+heap_tree=detailed
+n7: 356587023 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 154739104 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 154739088 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 144531072 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 144530064 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 46037376 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 46037376 0x10A1CB: bfs (main.c:35)
+       n0: 46037376 0x10A5E0: main (main.c:82)
+     n1: 35357616 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 35357616 0x10A1CB: bfs (main.c:35)
+       n0: 35357616 0x10A5E0: main (main.c:82)
+     n1: 35065296 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 35065296 0x10A1CB: bfs (main.c:35)
+       n0: 35065296 0x10A5E0: main (main.c:82)
+     n1: 28069776 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 28069776 0x10A1CB: bfs (main.c:35)
+       n0: 28069776 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 8532720 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 8531712 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 8531712 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1675296 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 154739088 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 144531072 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 144530064 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 46037376 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 46037376 0x10A1CB: bfs (main.c:35)
+      n0: 46037376 0x10A5E0: main (main.c:82)
+    n1: 35357616 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 35357616 0x10A1CB: bfs (main.c:35)
+      n0: 35357616 0x10A5E0: main (main.c:82)
+    n1: 35065296 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 35065296 0x10A1CB: bfs (main.c:35)
+      n0: 35065296 0x10A5E0: main (main.c:82)
+    n1: 28069776 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 28069776 0x10A1CB: bfs (main.c:35)
+      n0: 28069776 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 8532720 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 8531712 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 8531712 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1675296 in 1 place, below massif's threshold (1.00%)
+ n2: 14362640 0x108AC9: list_init (array_list.c:10)
+  n2: 14362640 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 14362600 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 14362600 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 14362640 0x109146: sokoban_create (sokoban.c:12)
+  n1: 14362600 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 14362600 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 11490112 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 11490080 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 11490080 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 5745072 0x108AB0: list_init (array_list.c:8)
+  n2: 5745056 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 5745040 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 5745040 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 1148367 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=2394643260
+mem_heap_B=366302351
+mem_heap_extra_B=119174881
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2423064462
+mem_heap_B=370237519
+mem_heap_extra_B=120493745
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2451485124
+mem_heap_B=374381439
+mem_heap_extra_B=121863417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2479906355
+mem_heap_B=378322951
+mem_heap_extra_B=123184153
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2508328348
+mem_heap_B=382291047
+mem_heap_extra_B=124507337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2536749597
+mem_heap_B=386214639
+mem_heap_extra_B=125822513
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2565170391
+mem_heap_B=390059839
+mem_heap_extra_B=127121545
+mem_stacks_B=0
+heap_tree=detailed
+n7: 390059839 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 169011376 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 169011360 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 158205600 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 158204592 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 50710464 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 50710464 0x10A1CB: bfs (main.c:35)
+       n0: 50710464 0x10A5E0: main (main.c:82)
+     n1: 38432016 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 38432016 0x10A1CB: bfs (main.c:35)
+       n0: 38432016 0x10A5E0: main (main.c:82)
+     n1: 38343312 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 38343312 0x10A1CB: bfs (main.c:35)
+       n0: 38343312 0x10A5E0: main (main.c:82)
+     n1: 30718800 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 30718800 0x10A1CB: bfs (main.c:35)
+       n0: 30718800 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 9041760 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 9040752 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 9040752 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1764000 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 169011360 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 158205600 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 158204592 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 50710464 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 50710464 0x10A1CB: bfs (main.c:35)
+      n0: 50710464 0x10A5E0: main (main.c:82)
+    n1: 38432016 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 38432016 0x10A1CB: bfs (main.c:35)
+      n0: 38432016 0x10A5E0: main (main.c:82)
+    n1: 38343312 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 38343312 0x10A1CB: bfs (main.c:35)
+      n0: 38343312 0x10A5E0: main (main.c:82)
+    n1: 30718800 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 30718800 0x10A1CB: bfs (main.c:35)
+      n0: 30718800 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 9041760 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 9040752 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 9040752 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1764000 in 1 place, below massif's threshold (1.00%)
+ n2: 15868840 0x109146: sokoban_create (sokoban.c:12)
+  n1: 15868800 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 15868800 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 15868800 0x108AC9: list_init (array_list.c:10)
+  n2: 15868800 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 15868760 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 15868760 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 12695040 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 12695008 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 12695008 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 6347536 0x108AB0: list_init (array_list.c:8)
+  n2: 6347520 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 6347504 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 6347504 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 1256887 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=2593590955
+mem_heap_B=394089527
+mem_heap_extra_B=128462137
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2622012044
+mem_heap_B=398013159
+mem_heap_extra_B=129780849
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2650432885
+mem_heap_B=401935863
+mem_heap_extra_B=131100601
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2678853935
+mem_heap_B=405844583
+mem_heap_extra_B=132414009
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2707274549
+mem_heap_B=409575055
+mem_heap_extra_B=133682145
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2735695112
+mem_heap_B=413293703
+mem_heap_extra_B=134950833
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2764116051
+mem_heap_B=417216895
+mem_heap_extra_B=136265777
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2792536635
+mem_heap_B=421032807
+mem_heap_extra_B=137559281
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2820959296
+mem_heap_B=424915903
+mem_heap_extra_B=138867577
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=2849379983
+mem_heap_B=428818271
+mem_heap_extra_B=140178113
+mem_stacks_B=0
+heap_tree=detailed
+n7: 428818271 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 185423632 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 185423616 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 173950560 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 173949552 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 56018592 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 56018592 0x10A1CB: bfs (main.c:35)
+       n0: 56018592 0x10A5E0: main (main.c:82)
+     n1: 42397488 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 42397488 0x10A1CB: bfs (main.c:35)
+       n0: 42397488 0x10A5E0: main (main.c:82)
+     n1: 41791680 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 41791680 0x10A1CB: bfs (main.c:35)
+       n0: 41791680 0x10A5E0: main (main.c:82)
+     n1: 33741792 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 33741792 0x10A1CB: bfs (main.c:35)
+       n0: 33741792 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 9608256 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 9607248 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 9607248 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1864800 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 185423616 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 173950560 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 173949552 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 56018592 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 56018592 0x10A1CB: bfs (main.c:35)
+      n0: 56018592 0x10A5E0: main (main.c:82)
+    n1: 42397488 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 42397488 0x10A1CB: bfs (main.c:35)
+      n0: 42397488 0x10A5E0: main (main.c:82)
+    n1: 41791680 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 41791680 0x10A1CB: bfs (main.c:35)
+      n0: 41791680 0x10A5E0: main (main.c:82)
+    n1: 33741792 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 33741792 0x10A1CB: bfs (main.c:35)
+      n0: 33741792 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 9608256 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 9607248 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 9607248 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1864800 in 1 place, below massif's threshold (1.00%)
+ n2: 17684120 0x108AC9: list_init (array_list.c:10)
+  n2: 17684120 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 17684080 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 17684080 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 17684120 0x109146: sokoban_create (sokoban.c:12)
+  n1: 17684080 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 17684080 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 14147272 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 14147240 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 14147240 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 7073664 0x108AB0: list_init (array_list.c:8)
+  n2: 7073648 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 7073632 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 7073632 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 1381847 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=2877800524
+mem_heap_B=432534591
+mem_heap_extra_B=141445097
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2906223653
+mem_heap_B=436484607
+mem_heap_extra_B=142767009
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2934646637
+mem_heap_B=440352615
+mem_heap_extra_B=144070993
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=2963067711
+mem_heap_B=444342351
+mem_heap_extra_B=145401545
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=2991488260
+mem_heap_B=448079975
+mem_heap_extra_B=146670921
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=3019908821
+mem_heap_B=451979439
+mem_heap_extra_B=147981321
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=3048329372
+mem_heap_B=455951719
+mem_heap_extra_B=149311001
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=3076754164
+mem_heap_B=459701527
+mem_heap_extra_B=150584633
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=3105174727
+mem_heap_B=463499071
+mem_heap_extra_B=151873353
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=3133595357
+mem_heap_B=467301055
+mem_heap_extra_B=153160825
+mem_stacks_B=0
+heap_tree=detailed
+n7: 467301055 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 201701824 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 201701808 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 189631008 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 189630000 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 61154352 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 61154352 0x10A1CB: bfs (main.c:35)
+       n0: 61154352 0x10A5E0: main (main.c:82)
+     n1: 46728864 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 46728864 0x10A1CB: bfs (main.c:35)
+       n0: 46728864 0x10A5E0: main (main.c:82)
+     n1: 45118080 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 45118080 0x10A1CB: bfs (main.c:35)
+       n0: 45118080 0x10A5E0: main (main.c:82)
+     n1: 36628704 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 36628704 0x10A1CB: bfs (main.c:35)
+       n0: 36628704 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 10108224 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 10107216 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 10107216 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1962576 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 201701808 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 189631008 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 189630000 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 61154352 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 61154352 0x10A1CB: bfs (main.c:35)
+      n0: 61154352 0x10A5E0: main (main.c:82)
+    n1: 46728864 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 46728864 0x10A1CB: bfs (main.c:35)
+      n0: 46728864 0x10A5E0: main (main.c:82)
+    n1: 45118080 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 45118080 0x10A1CB: bfs (main.c:35)
+      n0: 45118080 0x10A5E0: main (main.c:82)
+    n1: 36628704 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 36628704 0x10A1CB: bfs (main.c:35)
+      n0: 36628704 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 10108224 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 10107216 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 10107216 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1962576 in 1 place, below massif's threshold (1.00%)
+ n2: 19497240 0x109146: sokoban_create (sokoban.c:12)
+  n1: 19497200 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 19497200 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 19497200 0x108AC9: list_init (array_list.c:10)
+  n2: 19497200 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 19497160 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 19497160 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 15597760 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 15597728 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 15597728 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 7798896 0x108AB0: list_init (array_list.c:8)
+  n2: 7798880 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 7798864 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 7798864 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 1506327 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=3162016011
+mem_heap_B=471008655
+mem_heap_extra_B=154427337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=3190436594
+mem_heap_B=474731743
+mem_heap_extra_B=155696241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=3218857680
+mem_heap_B=478527175
+mem_heap_extra_B=156980969
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=3242662369
+mem_heap_B=481675359
+mem_heap_extra_B=158051001
+mem_stacks_B=0
+heap_tree=peak
+n7: 481675359 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 207745792 0x109A71: sokomem_empty (sokoban.c:121)
+  n3: 207745776 0x109AE4: sokomem_fill (sokoban.c:129)
+   n2: 195465312 0x109C30: sokoban_explored (sokoban.c:153)
+    n4: 195464304 0x109614: sokoban_explore_move (sokoban.c:59)
+     n1: 62969760 0x10969F: sokoban_add_moves (sokoban.c:68)
+      n1: 62969760 0x10A1CB: bfs (main.c:35)
+       n0: 62969760 0x10A5E0: main (main.c:82)
+     n1: 48409200 0x1096ED: sokoban_add_moves (sokoban.c:70)
+      n1: 48409200 0x10A1CB: bfs (main.c:35)
+       n0: 48409200 0x10A5E0: main (main.c:82)
+     n1: 46418400 0x1096C6: sokoban_add_moves (sokoban.c:69)
+      n1: 46418400 0x10A1CB: bfs (main.c:35)
+       n0: 46418400 0x10A5E0: main (main.c:82)
+     n1: 37666944 0x109678: sokoban_add_moves (sokoban.c:67)
+      n1: 37666944 0x10A1CB: bfs (main.c:35)
+       n0: 37666944 0x10A5E0: main (main.c:82)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n2: 10281600 0x109BE4: sokoban_explored (sokoban.c:148)
+    n1: 10280592 0x109614: sokoban_explore_move (sokoban.c:59)
+     n0: 10280592 in 4 places, all below massif's threshold (1.00%)
+    n0: 1008 in 1 place, below massif's threshold (1.00%)
+   n0: 1998864 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n3: 207745776 0x109AB0: sokomem_fill (sokoban.c:127)
+  n2: 195465312 0x109C30: sokoban_explored (sokoban.c:153)
+   n4: 195464304 0x109614: sokoban_explore_move (sokoban.c:59)
+    n1: 62969760 0x10969F: sokoban_add_moves (sokoban.c:68)
+     n1: 62969760 0x10A1CB: bfs (main.c:35)
+      n0: 62969760 0x10A5E0: main (main.c:82)
+    n1: 48409200 0x1096ED: sokoban_add_moves (sokoban.c:70)
+     n1: 48409200 0x10A1CB: bfs (main.c:35)
+      n0: 48409200 0x10A5E0: main (main.c:82)
+    n1: 46418400 0x1096C6: sokoban_add_moves (sokoban.c:69)
+     n1: 46418400 0x10A1CB: bfs (main.c:35)
+      n0: 46418400 0x10A5E0: main (main.c:82)
+    n1: 37666944 0x109678: sokoban_add_moves (sokoban.c:67)
+     n1: 37666944 0x10A1CB: bfs (main.c:35)
+      n0: 37666944 0x10A5E0: main (main.c:82)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n2: 10281600 0x109BE4: sokoban_explored (sokoban.c:148)
+   n1: 10280592 0x109614: sokoban_explore_move (sokoban.c:59)
+    n0: 10280592 in 4 places, all below massif's threshold (1.00%)
+   n0: 1008 in 1 place, below massif's threshold (1.00%)
+  n0: 1998864 in 1 place, below massif's threshold (1.00%)
+ n2: 20197240 0x108AC9: list_init (array_list.c:10)
+  n2: 20197240 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 20197200 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 20197200 in 4 places, all below massif's threshold (1.00%)
+   n0: 40 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 20197240 0x109146: sokoban_create (sokoban.c:12)
+  n1: 20197200 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 20197200 in 4 places, all below massif's threshold (1.00%)
+  n0: 40 in 1 place, below massif's threshold (1.00%)
+ n2: 16157792 0x1091D4: sokoban_create (sokoban.c:20)
+  n1: 16157760 0x1095FD: sokoban_explore_move (sokoban.c:58)
+   n0: 16157760 in 4 places, all below massif's threshold (1.00%)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 8078912 0x108AB0: list_init (array_list.c:8)
+  n2: 8078896 0x10916E: sokoban_create (sokoban.c:15)
+   n1: 8078880 0x1095FD: sokoban_explore_move (sokoban.c:58)
+    n0: 8078880 in 4 places, all below massif's threshold (1.00%)
+   n0: 16 in 1 place, below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 1552607 in 5 places, all below massif's threshold (1.00%)

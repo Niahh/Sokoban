@@ -19,10 +19,11 @@ enum move {
 };
 
 enum cell {
+    BLOCKED = 16,
     WALL = 8,
-    BOX = 1,
     TARGET = 4,
     PLAYER = 2,
+    BOX = 1,
     FREE = 0
 };
 
@@ -31,17 +32,15 @@ typedef struct sokomem sokomem;
 // a tree to store explored nodes.
 struct sokomem{
     // checks if the node exist
-    int exp;
+    int position;
     // the list of child nodes.
-    sokomem** son;
+    list* children;
 };
 
-
-sokomem* sokomem_empty();
+sokomem* sokomem_empty(int id);
 
 void sokomem_print(sokomem* mem, int dim, int prof);
 
-void sokomem_fill(sokomem* mem, int dim);
 typedef struct sokoban {
     int *state;
     list* boxes;
@@ -50,10 +49,11 @@ typedef struct sokoban {
     int prev_id;
 } sokoban;
 
+void sokomem_fill(sokomem* mem, int dim, sokoban* s, int is_box);
+
+int box_compare(pos* b1, pos* b2);
 
 int sokoban_explored(sokoban *s, sokomem* mem);
-
-int sokoban_is_legal(sokoban* s);
 
 sokoban *sokoban_create(int *state, int x, int y, int id);
 
@@ -77,5 +77,11 @@ void sokoban_print(sokoban *sokoban);
 
 int move_is_valid(sokoban *s, int mv_x, int mv_y);
 
+void sokoban_parse_illegals(sokoban* s);
 
+int sokoban_is_legal(sokoban* s, pos* start);
+
+int pos_compare(void* p1, void* p2);
+
+void pos_destroy(void * p);
 #endif //SOKOBAN_SOKOBAN_H
