@@ -1,6 +1,6 @@
-//
-// Created by laurent on 21/03/2018.
-//
+// Pierre Bertin 
+// Samy Ouastani
+// Laurent Toson
 
 #ifndef SOKOBAN_SOKOBAN_H
 #define SOKOBAN_SOKOBAN_H

@@ -1,3 +1,7 @@
+// Pierre Bertin 
+// Samy Ouastani
+// Laurent Toson
+
 #include <stdio.h>
 #include "array_list.h"
 #include "sokoban.h"

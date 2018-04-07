@@ -1,3 +1,7 @@
+// Pierre Bertin 
+// Samy Ouastani
+// Laurent Toson
+
 #include "stdio.h"
 #include "stdlib.h"
 #include "array_list.h"

@@ -1,6 +1,6 @@
-//
-// Created by pierre on 21/03/2018.
-//
+// Pierre Bertin 
+// Samy Ouastani
+// Laurent Toson
 
 #ifndef SOKOBAN_ARRAY_LIST_H
 #define SOKOBAN_ARRAY_LIST_H

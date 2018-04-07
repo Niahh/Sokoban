@@ -1,3 +1,7 @@
+// Pierre Bertin 
+// Samy Ouastani
+// Laurent Toson
+
 #include <stdlib.h>
 #include <stdio.h>
 #include "sokoban.h"
