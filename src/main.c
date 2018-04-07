@@ -18,6 +18,11 @@ sokoban* read_file(char* name){
     return sokoban_create(numberArray, dimx ,dimy, 0);
 }
 
+/**
+ * The bfs function, searches for the solution in a minimal number of moves.
+ * @param s
+ * @return
+ */
 list* bfs(sokoban* s){
     sokoban_parse_illegals(s);
     sokoban_print(s);

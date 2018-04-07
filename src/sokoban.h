@@ -11,13 +11,6 @@ typedef struct pos {
     int y;
 } pos;
 
-enum move {
-    UP = 1,
-    DOWN = 2,
-    LEFT = 4,
-    RIGHT = 8,
-};
-
 enum cell {
     BLOCKED = 16,
     WALL = 8,
@@ -29,7 +22,10 @@ enum cell {
 
 typedef struct sokomem sokomem;
 
-// a tree to store explored nodes.
+/**
+ * A tree to memorize the explored nodes.
+ * Each level represents the x/y position of a box/player.
+ */
 struct sokomem{
     // checks if the node exist
     int position;
@@ -39,7 +35,7 @@ struct sokomem{
 // Creates an empty node.
 sokomem* sokomem_empty(int id);
 
-/*
+/**
  * The struct containing the sokoban, contains a pointer to the map, the positions of the player and boxes.
  * Also contains an index to the previous state in the list of explored nodes.
  */
